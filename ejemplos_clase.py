@@ -41,7 +41,7 @@ def bucle_while():
         if (x_aux % 2) == 0:
             continue
 
-        # Imprimimos en pantalla el valorde x_aux,
+        # Imprimimos en pantalla el valor de x_aux,
         # que era el valor de x antes de incrementarlo
         print(x_aux, 'es menor a', valor_maximo)
 
@@ -194,10 +194,11 @@ def buscar_max():
     print("Cantidad del máximo número en la lista = ",
           lista_numeros.count(maximo_numero))
 
+
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    bucle_while()
-    bucle_for()
-    contador()
-    sumatoria()
-    buscar_max()
+    #bucle_while()
+    #bucle_for()
+    #contador()
+    #sumatoria()
+    #buscar_max()
