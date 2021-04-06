@@ -164,7 +164,7 @@ def ej6():
     nums_negativos = 0
     nums_positivos = 0
     
-    for i in range(inicio,fin):
+    for i in range(inicio,fin): # Inovetip: Recordá que el range en el fin no incluye el último valor, tenes que hacer: range(inicio, fin+1)
 
         if i >= 0:
             nums_positivos += 1
