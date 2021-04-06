@@ -39,9 +39,10 @@ def ej1():
     # el valor de "x" decremente "1" en cada iteración
 
     while (x <= 0):    # reemplace "condicion" por lo que crea necesario
+        # La condición del while tiene que ser x >=0 porque sino no entra :D
         print("Valor de x =", x )
         # Coloque la línea de código para que "X" decremente "1"
-        x += 1
+        x += 1 # Aquí tendría que ser x -= 1 para que decremente, sino el bucle es infinito :D
     print("\n")
 
 def ej2():
