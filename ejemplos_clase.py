@@ -14,7 +14,7 @@ __author__ = "Inove Coding School"
 __email__ = "alumnos@inove.com.ar"
 __version__ = "1.3"
 
-valor_maximo = 5
+valor_maximo = 6
 
 
 def bucle_while():
