@@ -160,7 +160,7 @@ def ej3():
     # y cacular la sumatoria
 
     for i in notas:
-        sumatoria += i
+        sumatoria += i # --> En la sumatoria no tienen que estar considerados los negativos.
         if i >= 0:
             cantidad_notas += 1
         elif i < 0:
@@ -169,7 +169,8 @@ def ej3():
     # Terminado el bucle calcule el promedio como
     # promedio = sumatoria / cantidad_notas
 
-    prom = sumatoria / cantidad_notas
+    prom = sumatoria / cantidad_notas # aquí estas tomando la sumatoria considerando los negativos sobre la cantidad
+    # de notas que NO considera los negativos!
 
     # Utilice la nota promedio calculada y transformela
     # a calificación con letras, imprima en pantalla el resultado
