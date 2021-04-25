@@ -50,8 +50,9 @@ def ej2():
     # Dado la siguiente lista de colores, utilizar "for"
     # para imprimir en pantalla todos los colores
     colores = ['rojo', 'naranja', 'verde', 'azul']
-    for colores in colores:
-        print('el color es', colores)
+    for colores in colores: #--> Aquí tendría que ser for color in colores!
+        # Es como decir, por cada color en colores
+        print('el color es', colores) # Y aquí tenes que llamar a "color"
 
     # Itere el "for" utilizando la lista como parámero
     # y utilizar como elemento del "for" cada color
@@ -118,8 +119,8 @@ def ej5():
     fin=int(input('Ingrese el ultimo numero de la secuencia\n'))
     # for ... in range(....)
     sumatoria = 0
-
-    for i in range(inicio, fin):
+    # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia!!!
+    for i in range(inicio, fin): # --> Acá tenes que hacer for i in range(inicio,fin+1) Porque no te toma el último numero de fin!
         sumatoria= sumatoria+i
         print("Sumatoria total= ",sumatoria)
     # Imprimir el valor de la sumatoria
@@ -146,9 +147,9 @@ def ej6():
     positivos=0
     negativos=0
     # for ... in range(....)
-    for i in range(inicio,fin):
+    for i in range(inicio,fin): # --> Aquí lo mismo, es range(inicio,fin+1)
         print('el numero de secuencia es:',i)
-        if i > 0:
+        if i > 0: # Aquí el enunciado pide "mayor igual a cero"
             print(i,'es positivo')
             positivos=positivos+1
         else:
